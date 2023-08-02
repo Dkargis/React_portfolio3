@@ -1,22 +1,41 @@
 import React from "react";
-
+import "./style.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
-    return (
-      <main>
-          <div className="flex-row justify-center">
-              <div className="col-12 col-md-8 mb-3">
-                  <header className="mb-5">
-                      <h1 className="fw-light">Welcome to Dane Kargis' Portfolio</h1>
-                  </header>
-                  <div className="card px-1 py-1">
-                      <span className="text-light">Placeholder for login</span>
-                  </div>
-              </div>
+  return (
+    <main>
+      <div className="flex-row justify-center">
+        <div className="col-12 col-md-8 mb-3">
+          <header className="mb-5 header-container">
+            <div className="d-flex justify-content-between align-items-center">
+              <h1 className="fw-light">Dane Kargis</h1>
+              <img
+                className="profile-picture"
+                src="./images/gojo.jpeg"
+                alt="Profile"
+              />
+            </div>
+          </header>
+          <div className="d-flex justify-content-between">
+            <Link className="btn btn-lg btn-dark px-4 me-3" to="/resume">
+              Resume
+            </Link>
+            <Link className="btn btn-lg btn-dark px-4 me-3" to="/portfolio">
+              Portfolio
+            </Link>
+            <Link className="btn btn-lg btn-dark px-4 me-3" to="/contact">
+              Contact
+            </Link>
+            <Link className="btn btn-lg btn-dark px-4 me-3" to="/">
+              About
+            </Link>
           </div>
-      </main>
-    );
-  };
+        </div>
+      </div>
+    </main>
+  );
+};
 
 export default Header;
+// /Users/danekargis/Documents/school stuff/React-portolio/portfolio/src/images/gojo.jpeg

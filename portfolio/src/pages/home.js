@@ -1,34 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
+import Header from '../components/header';
 
 const Home = () => {
-
   return (
     <main>
-        <div className="flex-row justify-center">
-            <div className="col-12 col-md-8 mb-3">
-                <header className="mb-5">
-                    <h1 className="fw-light">Welcome to Dane Kargis' Portfolio</h1>
-                    <Link className="btn btn-lg btn-dark px-4 me-3" to="/resume">
-                        Resume
-                    </Link>
-                    <Link className="btn btn-lg btn-dark px-4" to="/portfolio">
-                        Portfolio
-                    </Link>
-                    <Link className="btn btn-lg btn-dark px-4" to="/contact">
-                        Contact
-                    </Link>
-                    <Link className="btn btn-lg btn-dark px-4" to="/about">
-                        About
-                    </Link>
-                </header>
-                <div className="card px-1 py-1">
-                    <span className="text-light">Placeholder for login</span>
-                </div>
-            </div>
+      <div className="flex-row justify-center">
+        <div className="col-12 col-md-8 mb-3">
+          <header className="mb-5">
+            <Header />
+
+          </header>
+          <article className="mb-5">
+            <p>
+                I am a full stack web developer with a background in the arts. I have a passion for creating and learning new things. I am a graduate of the University of Utah's Full Stack Web Development Bootcamp. I am currently working as a freelance web developer and am looking for a full time position.
+            </p>
+            </article>
         </div>
+      </div>
     </main>
   );
 };
