@@ -20,7 +20,6 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (validateEmail(formData.email)) {
-      // Handle the form submission here, e.g., send the data to the server
       console.log('Form data:', formData);
     } else {
       alert('Please enter a valid email address.');
@@ -28,7 +27,6 @@ function Contact() {
   };
 
   const validateEmail = (email) => {
-    // Simple email validation using a regular expression
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
   };

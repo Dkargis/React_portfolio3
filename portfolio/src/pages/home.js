@@ -9,7 +9,6 @@ const Home = () => {
         <div className="col-12 col-md-8 mb-3">
           <header className="mb-5">
             <Header />
-
           </header>
           <article className="mb-5">
             <p>
