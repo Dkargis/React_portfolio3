@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import images from "../images/gojo.jpeg"
 
 const Header = () => {
   return (
@@ -11,10 +12,12 @@ const Header = () => {
             <div className="d-flex justify-content-between align-items-center">
               <h1 className="fw-light">Dane Kargis</h1>
               <img
-                className="profile-picture"
-                src="./images/gojo.jpeg"
-                alt="Profile"
+                  className="profile-picture"
+                    src={images}
+                  alt="Profile"
+                style={{ width: '100px', height: '50px' }}
               />
+
             </div>
           </header>
           <div className="d-flex justify-content-between">
@@ -39,3 +42,4 @@ const Header = () => {
 
 export default Header;
 // /Users/danekargis/Documents/school stuff/React-portolio/portfolio/src/images/gojo.jpeg
+///Users/danekargis/Documents/school stuff/React-portolio/portfolio/src/components

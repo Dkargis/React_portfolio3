@@ -2,41 +2,42 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/header';
 
+
 const projects = [
   {
     id: 1,
     title: 'Employee Tracker',
-    image: '/path/to/project1-image.jpg',
+    image: '/assets/images/emplopyee.png',
     link: 'https://github.com/Dkargis/Employee_Tracker.git',
   },
   {
     id: 2,
     title: 'PWA Text Editor',
-    image: '/images/text-editor.png',
+    image: '/assets/images/text-editor.png',
     link: 'https://github.com/Dkargis/PWA.git',
   },
   {
     id: 3,
     title: 'Note Taker',
-    image: '/path/to/project3-image.jpg',
+    image: '/assets/images/note.png',
     link: 'https://github.com/Dkargis/Note_taker.git',
   },
   {
     id: 4,
     title: 'E-Commerce Back End',
-    image: '/path/to/project4-image.jpg',
+    image: '/assets/images/backendshop.png',
     link: 'https://github.com/Dkargis/E-commerce.git'
   },
   {
     id: 5,
     title: 'Hiking App',
-    image: '/path/to/project5-image.jpg',
+    image: '/assets/images/hike.png',
     link: 'https://github.com/Dkargis/team-Inception.git'
   },
   {
     id: 6,
     title: 'Sleep Helper App',
-    image: '/path/to/project6-image.jpg',
+    image: '/assets/images/sleepshop.png',
     link: 'https://github.com/Luis6400/SleepShop.git'
   },
 ];
@@ -59,14 +60,14 @@ function Portfolio() {
                       src={project.image}
                       className="card-img-top"
                       alt={project.title}
+                      style={{ width: '1000px', height: '500px' }}
                     />
                     <div className="card-body">
-                      <h5 className="card-title">{project.title}</h5>
                       <Link
                         className="btn btn-dark"
                         to={project.link}
                       >
-                        Learn More
+                        {project.title}
                       </Link>
                     </div>
                   </div>
