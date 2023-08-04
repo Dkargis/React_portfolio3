@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/header';
-
+import note from '../images/note.png';
 
 const projects = [
   {
     id: 1,
     title: 'Employee Tracker',
-    image: '/assets/images/emplopyee.png',
+    image: './images/emplopyee.png',
     link: 'https://github.com/Dkargis/Employee_Tracker.git',
   },
   {
@@ -19,13 +19,13 @@ const projects = [
   {
     id: 3,
     title: 'Note Taker',
-    image: '/assets/images/note.png',
-    link: 'https://github.com/Dkargis/Note_taker.git',
+    image: './images/note.png',
+    link: 'https://github.com/Dkargis/Note_taker',
   },
   {
     id: 4,
     title: 'E-Commerce Back End',
-    image: '/assets/images/backendshop.png',
+    image: '../../../public/assets/images/backendshop.png',
     link: 'https://github.com/Dkargis/E-commerce.git'
   },
   {
