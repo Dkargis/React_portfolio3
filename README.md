@@ -54,5 +54,4 @@ Contact
 For any inquiries or feedback, please contact me at:
 
 Email: dane.kargis@gmail.com
-GitHub: Your GitHub Profile
-Feel free to customize this README file to match the specifics of your React portfolio project. You can add more sections or modify the content to make it relevant to your project's unique features and structure.
+GitHub: Your GitHub [Dkargis] 
