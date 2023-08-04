@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dkargis.github.io/React-portolio/",
+  "homepage": "https://dkargis.github.io/React-portolio2/",
   "dependencies": {
     "@picocss/pico": "^1.5.10",
     "@testing-library/jest-dom": "^5.17.0",
